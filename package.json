@@ -1,21 +1,17 @@
 {
-  "name": "StudentCRUDApp",
-  "version": "1.0.0",
-  "description": "Express CRUD application on StudentDetails",
-  "main": "app.js",
+  "name": "research",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "config.json": "0.0.4",
-    "express": "^4.13.4",
-    "fs": "0.0.1-security",
-    "mongoose": "^4.4.11",
-    "nodemailer": "^4.0.1",
-    "nodemailer-smtp-transport": "^2.7.4",
-    "sequelize-redis-cache": "^2.0.0"
-  },
-  "author": "AP Cloud Team",
-  "license": "ISC"
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  }
 }

@@ -2,7 +2,7 @@
 	<div class = "container">
 		<div class="col-md-4 col-md-offset-4">
 			<div class="form-group has-feedback">
-				<input type="search" class="form-control" ng-model="eEmail" placeholder="Enter Email Address">
+				<input type="search" class="form-control" ng-model="salary" placeholder="Enter salary">
 				<br>
 				<div class="text-center">
 					<ul class="pagination pagination-lg">
@@ -11,13 +11,16 @@
 				</div>
 			</div>
 			<br>
-			<div ng-show="email">
-				<div class="padding">
+			<div ng-show="data">
+				<div class="padding" ng-repeat="x in data">
 					<div class="form-group has-feedback">
-						Name:	<input type="text" class="form-control" placeholder="Name" ng-value="name" ng-model="eName">
+						Name:	<input type="text" class="form-control" placeholder="Name" ng-value="x.eName" ng-model="eName">
 					</div>
 					<div class="form-group has-feedback">
-						Email:<input type="email" class="form-control" placeholder="Email" ng-value="email" ng-model="eEmail">
+						Email:<input type="email" class="form-control" placeholder="Email" ng-value="x.eEmail" ng-model="eEmail">
+					</div>
+					<div class="form-group has-feedback">
+						Salary:	<input type="text" class="form-control" placeholder="Name" ng-value="x.salary" ng-model="salary">
 					</div>
 					<button class="btn btn-warning" ng-click="update()">update</button>
 				</div>
